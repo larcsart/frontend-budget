@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background: #ffffff;
+    color: #312E38;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+    font-family: 'Arial', serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 500;
+}
+
+button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .icon {
+        width: 24px;
+        height: 24px;
+        background: none;
+        margin-right: 10px;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+
+    .icon {
+        width: 32px;
+        color: #333;
+        background: #ffffff;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1400px) {
+    /* For mobile phones: */
+    .products .content,
+    .order .content,
+    .order .content .resume,
+    .home .content,
+    .header .content,
+    #app .breadcrumb .content {
+        max-width: 95% !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .order .content .command h1 {
+        padding: 20px;
+    }
+    .order .content .command select {
+        width: 150px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .products .content .add-product input { 
+        width: 180px;
+        padding: 5px; 
+    }
+}
+
+@media (max-width: 1110px) {
+    .products .content .add-product input { 
+        padding: 5px; 
+        width: 130px;
+    }
+
+    .icon-container {
+        width: 80px;
+        height: 80px;
+    }
+    .detail {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .icon-container {
+        width: 70px;
+        height: 70px;
+    }
+    .detail {
+        height: 70px;
+    }
+
+    .products .content,
+    .order .content,
+    .order .content .resume,
+    .home .content,
+    .header .content,
+    #app .breadcrumb .content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .products .content .add-product input { 
+        padding: 5px; 
+        width: 140px;
+    }
+
+    .icon-container {
+        width: 60px;
+        height: 60px;
+    }
+    .detail {
+        height: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .products .content .add-product input { 
+        padding: 5px; 
+        width: 120px;
+    }
+}
+
+@media (max-width: 920px) {
+    .icon-container {
+        width: 50px;
+        height: 50px;
+    }
+    .detail {
+        height: 50px;
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .add-product {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .total {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .order .content .resume {
+        width: 100%;
+    }
+
+    .detail {
+        padding: 10px;
+    }
+
+    .order .content .resume {
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .order .content .resume .buttons {
+        width: auto;
+    }
+    .order .content .resume .buttons button {
+        padding: 10px 20px;
+    }
+
+    .order .content .resume .totals {
+        width: 400px;
+    }
+
+    .order .content .command button {
+        padding: 0 10px;
+    }
+
+    .order .content .command select {
+        width: 130px;
+    }
+}
+
+@media (max-width: 730px) {
+    .detail {
+        padding: 5px;
+    }
+
+    .order .content .command button span {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) {
+    .order .content .resume .buttons {
+        width: auto;
+    }
+
+    .order .content .resume .buttons button {
+        padding: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header .buttons button {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .order .content .command {
+        flex-direction: column;
+    }
+
+    .order .content .command form {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 570px) {
+    .add-product {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .add-product form button {
+        justify-content: center;
+    }
+    .add-product form button .icon {
+        margin: 0;
+    }
+    .add-product form span {
+        display: none;
+    }
+}
+
+@media (max-width: 530px) {
+    .detail span {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .products .content .add-product input { 
+        padding: 5px; 
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .order .content .resume {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .order .content .resume .buttons {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .order .content .resume .totals {
+        width: 100%;
+    }
+}
+
+
